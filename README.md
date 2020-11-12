@@ -2,6 +2,8 @@
 
 Integrate [EnvKey](https://www.envkey.com) with your Node.js projects to keep api keys, credentials, and other configuration securely and automatically in sync for developers and servers.
 
+**IMPORTANT:** this is a linux 64-bit build only, all other platfroms have been removed, so that the final module size is 8x smaller
+
 ## Installation
 
 ```bash
