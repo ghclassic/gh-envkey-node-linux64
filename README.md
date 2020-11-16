@@ -1,4 +1,4 @@
-# envkey npm package
+# envkey linux 64-bit npm package
 
 Integrate [EnvKey](https://www.envkey.com) with your Node.js projects to keep api keys, credentials, and other configuration securely and automatically in sync for developers and servers.
 
@@ -7,21 +7,21 @@ Integrate [EnvKey](https://www.envkey.com) with your Node.js projects to keep ap
 ## Installation
 
 ```bash
-npm install 'envkey' --save
+npm install 'gh-envkey-linux64' --save
 ```
 
 Then at the entry point of your application:
 
 ```javascript
 // main.js
-require('envkey')
+require('gh-envkey-linux64')
 ```
 
 Or if you prefer ES6+ imports:
 
 ```javascript
 // main.js
-import 'envkey'
+import 'gh-envkey-linux64'
 ```
 
 ## Usage
@@ -74,7 +74,7 @@ If you want more control over how/when envkey loads your config, you can import/
 With require:
 
 ```javascript
-const envkeyLoader = require('envkey/loader')
+const envkeyLoader = require('gh-envkey-linux64/loader')
 
 envkeyLoader.load({
   dotEnvFile: ".staging.env", // where to find the dotEnv file that contains your ENVKEY,
@@ -85,7 +85,7 @@ envkeyLoader.load({
 Or with imports:
 
 ```javascript
-import {load as envkeyLoad} from 'envkey/loader'
+import {load as envkeyLoad} from 'gh-envkey-linux64/loader'
 
 envkeyLoad({ dotEnvFile: ".staging.env" })
 ``` 
@@ -93,7 +93,7 @@ envkeyLoad({ dotEnvFile: ".staging.env" })
 You can also load your config asynchronously by providing a callback to the load function:
 
 ```javascript
-const envkeyLoader = require('envkey/loader')
+const envkeyLoader = require('gh-envkey-linux64/loader')
 
 envkeyLoader.load({
   dotEnvFile: ".staging.env", // where to find the dotEnv file that contains your ENVKEY,
@@ -107,7 +107,7 @@ envkeyLoader.load({
 For even more flexibility, you can use the `fetch` method to return your config as simple json and do as you wish with it. As with `load`, it can be called synchronously or asynchronously.
 
 ```javascript
-const envkeyLoader = require('envkey/loader')
+const envkeyLoader = require('gh-envkey-linux64/loader')
 
 // synchronous
 const config = envkeyLoader.fetch({ 
